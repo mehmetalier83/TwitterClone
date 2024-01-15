@@ -12,6 +12,10 @@
 		6466FC4F2B55BD6E00D56AF7 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC4E2B55BD6E00D56AF7 /* MainTabbarViewController.swift */; };
 		6466FC542B55BD6E00D56AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6466FC532B55BD6E00D56AF7 /* Assets.xcassets */; };
 		6466FC572B55BD6E00D56AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6466FC552B55BD6E00D56AF7 /* LaunchScreen.storyboard */; };
+		6466FC612B55BF7500D56AF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC602B55BF7500D56AF7 /* HomeViewController.swift */; };
+		6466FC632B55BF8500D56AF7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC622B55BF8500D56AF7 /* SearchViewController.swift */; };
+		6466FC652B55BF9300D56AF7 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC642B55BF9300D56AF7 /* NotificationViewController.swift */; };
+		6466FC672B55BF9F00D56AF7 /* DirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC662B55BF9F00D56AF7 /* DirectMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		6466FC532B55BD6E00D56AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6466FC562B55BD6E00D56AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6466FC582B55BD6E00D56AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6466FC602B55BF7500D56AF7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = TwitterClone/Controllers/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		6466FC622B55BF8500D56AF7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6466FC642B55BF9300D56AF7 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		6466FC662B55BF9F00D56AF7 /* DirectMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		6466FC492B55BD6E00D56AF7 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				6466FC5E2B55BF5500D56AF7 /* Controllers */,
 				6466FC4A2B55BD6E00D56AF7 /* AppDelegate.swift */,
 				6466FC4C2B55BD6E00D56AF7 /* SceneDelegate.swift */,
-				6466FC4E2B55BD6E00D56AF7 /* MainTabbarViewController.swift */,
 				6466FC532B55BD6E00D56AF7 /* Assets.xcassets */,
 				6466FC552B55BD6E00D56AF7 /* LaunchScreen.storyboard */,
 				6466FC582B55BD6E00D56AF7 /* Info.plist */,
 			);
 			path = TwitterClone;
+			sourceTree = "<group>";
+		};
+		6466FC5E2B55BF5500D56AF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6466FC5F2B55BF6300D56AF7 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6466FC5F2B55BF6300D56AF7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6466FC4E2B55BD6E00D56AF7 /* MainTabbarViewController.swift */,
+				6466FC602B55BF7500D56AF7 /* HomeViewController.swift */,
+				6466FC622B55BF8500D56AF7 /* SearchViewController.swift */,
+				6466FC642B55BF9300D56AF7 /* NotificationViewController.swift */,
+				6466FC662B55BF9F00D56AF7 /* DirectMessageViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6466FC632B55BF8500D56AF7 /* SearchViewController.swift in Sources */,
 				6466FC4F2B55BD6E00D56AF7 /* MainTabbarViewController.swift in Sources */,
+				6466FC652B55BF9300D56AF7 /* NotificationViewController.swift in Sources */,
 				6466FC4B2B55BD6E00D56AF7 /* AppDelegate.swift in Sources */,
+				6466FC672B55BF9F00D56AF7 /* DirectMessageViewController.swift in Sources */,
 				6466FC4D2B55BD6E00D56AF7 /* SceneDelegate.swift in Sources */,
+				6466FC612B55BF7500D56AF7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
