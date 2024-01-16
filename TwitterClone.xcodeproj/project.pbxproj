@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		643651072B56DFB30098A6EB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643651062B56DFB30098A6EB /* ProfileViewController.swift */; };
+		643651092B56EACB0098A6EB /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643651082B56EACB0098A6EB /* ProfileTableViewHeader.swift */; };
 		6466FC4B2B55BD6E00D56AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC4A2B55BD6E00D56AF7 /* AppDelegate.swift */; };
 		6466FC4D2B55BD6E00D56AF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC4C2B55BD6E00D56AF7 /* SceneDelegate.swift */; };
 		6466FC4F2B55BD6E00D56AF7 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6466FC4E2B55BD6E00D56AF7 /* MainTabbarViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		643651062B56DFB30098A6EB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		643651082B56EACB0098A6EB /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
 		6466FC472B55BD6E00D56AF7 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6466FC4A2B55BD6E00D56AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6466FC4C2B55BD6E00D56AF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		643651052B56DF9F0098A6EB /* General */ = {
+			isa = PBXGroup;
+			children = (
+				643651062B56DFB30098A6EB /* ProfileViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		6466FC3E2B55BD6E00D56AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +90,7 @@
 		6466FC5E2B55BF5500D56AF7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				643651052B56DF9F0098A6EB /* General */,
 				6466FC5F2B55BF6300D56AF7 /* Core */,
 			);
 			path = Controllers;
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				649C12BA2B5660E400FC6649 /* TweetTableViewCell.swift */,
+				643651082B56EACB0098A6EB /* ProfileTableViewHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,12 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643651092B56EACB0098A6EB /* ProfileTableViewHeader.swift in Sources */,
 				6466FC632B55BF8500D56AF7 /* SearchViewController.swift in Sources */,
 				6466FC4F2B55BD6E00D56AF7 /* MainTabbarViewController.swift in Sources */,
 				6466FC652B55BF9300D56AF7 /* NotificationViewController.swift in Sources */,
 				6466FC4B2B55BD6E00D56AF7 /* AppDelegate.swift in Sources */,
 				6466FC672B55BF9F00D56AF7 /* DirectMessageViewController.swift in Sources */,
 				6466FC4D2B55BD6E00D56AF7 /* SceneDelegate.swift in Sources */,
+				643651072B56DFB30098A6EB /* ProfileViewController.swift in Sources */,
 				6466FC612B55BF7500D56AF7 /* HomeViewController.swift in Sources */,
 				649C12BB2B5660E400FC6649 /* TweetTableViewCell.swift in Sources */,
 			);
