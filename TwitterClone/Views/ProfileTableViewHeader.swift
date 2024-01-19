@@ -8,7 +8,38 @@
 import UIKit
 
 class ProfileTableViewHeader: UIView {
-    
+    private let followersTextLabel: UILabel = {
+           let label = UILabel()
+           label.translatesAutoresizingMaskIntoConstraints = false
+           label.text = "Followers"
+           label.textColor = .secondaryLabel
+           label.font = .systemFont(ofSize: 14, weight: .regular)
+           return label
+       }()
+       
+       var followersCountLabel: UILabel = {
+           let label = UILabel()
+           label.translatesAutoresizingMaskIntoConstraints = false
+           label.textColor = .label
+           label.font = .systemFont(ofSize: 14, weight: .bold)
+           return label
+       }()
+       
+       private let followingTextLabel: UILabel = {
+           let label = UILabel()
+           label.translatesAutoresizingMaskIntoConstraints = false
+           label.text = "Following"
+           label.textColor = .secondaryLabel
+           label.font = .systemFont(ofSize: 14, weight: .regular)
+           return label
+       }()
+    var followingCountLabel: UILabel = {
+         let label = UILabel()
+         label.translatesAutoresizingMaskIntoConstraints = false
+         label.textColor = .label
+         label.font = .systemFont(ofSize: 14, weight: .bold)
+         return label
+     }()
     private let joinedDateLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -79,6 +110,10 @@ class ProfileTableViewHeader: UIView {
         addSubview(userBioLabel)
         addSubview(joinDateImageView)
         addSubview(joinedDateLabel)
+        addSubview(followingCountLabel)
+        addSubview(followingTextLabel)
+        addSubview(followersCountLabel)
+        addSubview(followersTextLabel)
         configureConstraints()
     }
     private func configureConstraints(){
@@ -115,6 +150,26 @@ class ProfileTableViewHeader: UIView {
                 joinedDateLabel.bottomAnchor.constraint(equalTo: joinDateImageView.bottomAnchor)
 
             ]
+             let followingCountLabelConstraints = [
+                   followingCountLabel.leadingAnchor.constraint(equalTo: displayNameLabel.leadingAnchor),
+                   followingCountLabel.topAnchor.constraint(equalTo: joinedDateLabel.bottomAnchor, constant: 10)
+               ]
+               
+               let followingTextLabelConstraints = [
+                   followingTextLabel.leadingAnchor.constraint(equalTo: followingCountLabel.trailingAnchor, constant: 4),
+                   followingTextLabel.bottomAnchor.constraint(equalTo: followingCountLabel.bottomAnchor)
+               ]
+               
+               let followersCountLabelConstraints = [
+                   followersCountLabel.leadingAnchor.constraint(equalTo: followingTextLabel.trailingAnchor, constant: 8),
+                   followersCountLabel.bottomAnchor.constraint(equalTo: followingCountLabel.bottomAnchor)
+               ]
+               
+               let followersTextLabelConstraints = [
+                   followersTextLabel.leadingAnchor.constraint(equalTo: followersCountLabel.trailingAnchor, constant: 4),
+                   followersTextLabel.bottomAnchor.constraint(equalTo: followingCountLabel.bottomAnchor)
+               ]
+               
         NSLayoutConstraint.activate(profileHeaderImageViewConstraints)
         NSLayoutConstraint.activate(profileAvatarImageViewConstraints)
         NSLayoutConstraint.activate(displayNameLabelConstraints)
@@ -122,6 +177,11 @@ class ProfileTableViewHeader: UIView {
         NSLayoutConstraint.activate(userBioLabelConstraints)
         NSLayoutConstraint.activate(joinDateImageViewConstraints)
         NSLayoutConstraint.activate(joinedDateLabelConstraints)
+        NSLayoutConstraint.activate(followingCountLabelConstraints)
+        NSLayoutConstraint.activate(followingTextLabelConstraints)
+        NSLayoutConstraint.activate(followersCountLabelConstraints)
+        NSLayoutConstraint.activate(followersTextLabelConstraints)
+        
     }
     
     required init?(coder: NSCoder) {
